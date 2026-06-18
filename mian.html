@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>我的个人网页</title>
+    <style>
+       /*页面背景*/
+       body
+       {
+        /*渐变背景*/
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        /*设置字体*/
+        font-family: "Microsoft YaHei" , "PingFang SC",sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 50px 20px;
+        min-height: 100vh;
+       }
+       .container
+       {
+        /*最大宽度*/
+        max-width: 600px;
+         /*外边距，上下 0 ,左右自适应*/
+        margin: 0 auto;
+         /*背景色*/
+        background: white;
+         /*圆角*/
+         border-radius: 20px;
+          /*内边距，内容不贴边*/
+        padding: 40px;
+        /*阴影效果*/
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+       }
+       h1
+       {
+        text-align: center;
+        color: #667eea;
+        font-size: 36px;
+        margin-bottom: 10px;
+       }
+       .subittle
+       {
+        text-align: center;
+        color: #888;
+        font-size: 16px;
+        margin-bottom: 30px;
+       }
+       p
+       {
+        line-height: 1.8;
+        font-size: 16px;
+       }
+       h2{
+        color: #764ba2;
+        font-size: 22px;
+        border-left: 4px solid #764ba2;
+        padding-left: 12px;
+        margin-top: 30px;
+       }
+       ul,ol{
+        padding-left: 0;
+        list-style: none;
+       }
+       li a{
+        display: block;
+        padding: 10px 0;
+        padding: 12px 16px;
+        border-radius: 10px;
+        border-left: 4px solid #667eea;
+        text-decoration: none;
+        color: #333;
+        transition: all 0.3s ease;
+       }
+       li a:hover{
+        background: #667eea;
+        color: white;
+        transform:translateX(5px);
+        box-shadow: 0 4px 12px rgba(102,126,234,0.3);
+       }
+        /*已完成-绿色*/
+       li.done a{
+        border-left-color: #51cf66;
+       }
+        /*进行中-橙色*/
+       li.active a{
+        border-left-color: #e87b14;
+       }
+       li.active a:hover{
+        background: #e87b14;
+        box-shadow: 0 4px 12px rgba(232,123,20,0.3);
+       }
+       a{
+        color: #667eea;
+        text-decoration: none;
+        font-weight: bold;
+        border-bottom: 2px solid transparent;
+        transition: all 0.3s ease;
+       }
+       a:hover{
+        color: #764ba2;
+        border-bottom: 2px solid #667eea;
+       }
+        /*按钮*/
+       .btn{
+        display: inline-block;
+        background: linear-gradient(135deg,#667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 12px 30px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 20px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(102,126,234,0.4);
+       } 
+       .btn:hover{
+        transform: translate(-3px);
+        box-shadow: 0 8px 25px rgba(118,75,162,0.5);
+       }
+       img{
+        width: 100%;
+        border-radius: 15px;
+        margin-top: 20px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+       }
+       .footer{
+        text-align: center;
+        margin-top:40px;
+        color: #aaa;
+        font-size: 14px;
+       }
+       hr{
+        border: none;
+        border-top: 1px solid #eee;
+        margin: 25px 0;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+<h1>欢迎来到我的个人网页 👋</h1>
+<p class="subittle">这是一个简单的HTML页面，用于展示我的个人信息和兴趣爱好。</p>
+<p>你好！我是小杨，一名视觉工程师。我热爱编程、摄影和旅行。这个网页是我用HTML和CSS制作的，旨在分享我的个人信息和学习计划。</p>
+<hr>
+<h2>🎯 我的爱好</h2>
+<ul>
+    <li><a href="https://github.com" target="_blank">💻 编程</a></li>
+    <li><a href="https://www.dji.com/cn" target="_blank">📸 摄影</a></li>
+    <li><a href="https://www.dalitravel.cn/" target="_blank">🌴 旅行</a></li>
+</ul>
+<h2>📋 学习计划</h2>
+<ol>
+    <li class="done"><a href="https://www.runoob.com/html/html-tutorial.html" target="_blank">✅ HTML网页结构(已完成)</a></li>
+    <li class="done"><a href="https://www.runoob.com/js/js-tutorial.html" target="_blank">⏳ CSS 美化样式(未开始)</a></li>
+    <li class="done"><a href="https://www.runoob.com/vue/vue-tutorial.html" target="_blank">⏳ JavaScript 交互效果(未开始)</a></li>
+    <li class="done"><a href="https://github.com/new" target="_blank">⏳ GitHub 项目(未开始)</a></li>
+</ol>
+<p>推荐学习资料<a href = "https://developer.mozilla.org/zh-CN/" target="_blank">MDN web 文档</a></p>
+<a href="https://github.com" class="btn" target="_blank">访问GitHub</a>
+<img src="https://picsum.photos/600/300" alt="出错啦">
+<div class="footer">© 2026 小杨的个人网页. 版权所有.</div>
+    </div>
+
+</body>
+</html>
